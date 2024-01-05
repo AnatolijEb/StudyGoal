@@ -46,9 +46,9 @@ body {
   text-align: center;
 }
 
-@media (width >= 450px) {
-  .login {
-    width: 380px;
+@media (min-width: 500px) {
+  body {
+    padding: 0;
   }
 }
 
@@ -145,4 +145,71 @@ body {
   font-size: 16px;
   text-align: left;
   text-decoration: none;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.top-bar {
+  display: flex-start;
+  align-items: space-between;
+  justify-content: space-between;
+  background-color: #161616;
+  padding: 15px 30px;
+  color: white;
+}
+
+.top-bar h1 {
+  margin: 0;
+}
+
+.top-bar nav {
+  display: flex-start;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.top-bar a:hover {
+  background-color: #555;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #161616;
+  color: white;
+  padding: 20px;
+  flex-direction: row; /* Set the flex direction to row */
+
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #777;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
 }
